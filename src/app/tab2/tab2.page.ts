@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { PhotoService } from '../core/services/photo/photo.service';
+import { PhotoType } from '../core/Types/photo-type';
 
 @Component({
   selector: 'app-tab2',
@@ -9,7 +10,7 @@ import { PhotoService } from '../core/services/photo/photo.service';
 export class Tab2Page {
 
   constructor(
-    private photoService: PhotoService
+    public photoService: PhotoService
   ) { }
 
   /**
