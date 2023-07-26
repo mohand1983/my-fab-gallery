@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import {Camera, CameraResultType, CameraSource} from '@capacitor/camera'
+import {Camera, CameraResultType, CameraSource, Photo} from '@capacitor/camera'
 import { PhotoType } from '../../Types/photo-type';
 
 @Injectable({
@@ -32,4 +32,7 @@ export class PhotoService {
   public get photos(): Array<PhotoType>{
     return this._photos
   }
+
+  private async savePicture(photo: Photo) { }
+      
 }
